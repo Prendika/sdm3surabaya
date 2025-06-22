@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SD Muhammadiyah 3 Surabaya
+    </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Custom CSS for elements that need more styling */
+        .hero-image {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(image/header2.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .floating-animation {
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        
+        .news-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .news-card {
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Header with Navigation -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <i class="fas fa-school text-3xl text-yellow-500 mr-3"></i>
+                <div>
+                    <h1 class="text-xl font-bold text-gray-800">SD Muhammadiyah 3 Surabaya</h1>
+                    <p class="text-xs text-gray-600">Sekolah Mujahid Qur'an</p>
+                </div>
+            </div>
+            
+            <button id="mobile-menu-button" class="md:hidden text-gray-700">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+            
+            <nav class="hidden md:flex space-x-8">
+                <a href="#home" class="text-gray-800 hover:text-yellow-500 font-medium">Home</a>
+                <a href="#about" class="text-gray-800 hover:text-yellow-500 font-medium">About</a>
+                <a href="#programs" class="text-gray-800 hover:text-yellow-500 font-medium">Programs</a>
+                <a href="#news" class="text-gray-800 hover:text-yellow-500 font-medium">News</a>
+                <a href="#contact" class="text-gray-800 hover:text-yellow-500 font-medium">Contact</a>
+            </nav>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white py-4 px-4 shadow-lg">
+            <a href="#home" class="block py-2 text-gray-800 hover:text-yellow-500">Home</a>
+            <a href="#about" class="block py-2 text-gray-800 hover:text-yellow-500">About</a>
+            <a href="#programs" class="block py-2 text-gray-800 hover:text-yellow-500">Programs</a>
+            <a href="#news" class="block py-2 text-gray-800 hover:text-yellow-500">News</a>
+            <a href="#contact" class="block py-2 text-gray-800 hover:text-yellow-500">Contact</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-image text-white py-20 md:py-32">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Welcome to SD Muhammadiyah 3 Surabaya</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">Sekolah Mujahid Qur'an,Unggul dan Berkarakter Qur'ani</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <!--
+                <a href="#contact" class="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-3 px-6 rounded-full transition duration-300">Enroll Now</a>
+                <a href="#about" class="bg-transparent hover:bg-white hover:text-gray-900 border-2 border-white text-white font-bold py-3 px-6 rounded-full transition duration-300">Learn More</a>
+                -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Visi Misi Sekolah</h2>
+                <div class="w-20 h-1 bg-yellow-500 mx-auto"></div>
+            </div>
+            
+            <div class="flex flex-col md:flex-row items-center gap-8">
+                <div class="md:w-1/2">
+                    <img src="image/visi.jpg" alt="School building" class="rounded-lg shadow-xl w-full">
+                </div>
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Tempat Belajar Anak yang menyenangkan</h3>
+                    <p class="text-gray-600 mb-4">SD Muhammadiyah 3 Surabaya memiliki visi untuk menjadi sekolah yang unggul dalam prestasi akademik dan non-akademik, serta menerapkan nilai-nilai keislaman dalam seluruh aspek kegiatan sekolah.</p>
+                    <p class="text-gray-600 mb-6">Selain visi, SD Muhammadiyah 3 Surabaya juga memiliki misi yang mendukung pencapaian visi tersebut, yaitu menyelenggarakan pendidikan yang berkualitas, berwawasan global, serta berlandaskan pada nilai-nilai keislaman.</p>
+                    
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-graduation-cap text-yellow-500 text-2xl mr-3"></i>
+                            <div>
+                                <p class="font-bold text-gray-800">25+</p>
+                                <p class="text-sm text-gray-600">Certified Teachers</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-child text-yellow-500 text-2xl mr-3"></i>
+                            <div>
+                                <p class="font-bold text-gray-800">400+</p>
+                                <p class="text-sm text-gray-600">Happy Students</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-trophy text-yellow-500 text-2xl mr-3"></i>
+                            <div>
+                                <p class="font-bold text-gray-800">15+</p>
+                                <p class="text-sm text-gray-600">Awards Won</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-calendar-alt text-yellow-500 text-2xl mr-3"></i>
+                            <div>
+                                <p class="font-bold text-gray-800">28</p>
+                                <p class="text-sm text-gray-600">Years of Excellence</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section id="programs" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Progam Sekolah</h2>
+                <div class="w-20 h-1 bg-yellow-500 mx-auto"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Program 1 -->
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition duration-300 text-center">
+                    <div class="bg-yellow-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-tree text-yellow-500 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Adiwiyata</h3>
+                    <p class="text-gray-600 mb-4">Program yang bertujuan untuk menciptakan lingkungan sekolah yang hijau, bersih, dan sehat.</p>
+                    <a href="#" class="text-yellow-500 font-medium hover:text-yellow-600">Learn More →</a>
+                </div>
+                
+                <!-- Program 2 -->
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition duration-300 text-center">
+                    <div class="bg-yellow-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-book text-yellow-500 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Karya Tulis Siswa</h3>
+                    <p class="text-gray-600 mb-4">Kegiatan pembelajaran kelas 1, 2, dan 3 yang bertujuan untuk melatih siswa dalam membuat karya tulis.</p>
+                    <a href="#" class="text-yellow-500 font-medium hover:text-yellow-600">Learn More →</a>
+                </div>
+                
+                <!-- Program 3 -->
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition duration-300 text-center">
+                    <div class="bg-yellow-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-microphone-alt text-yellow-500 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Mudiga Fest</h3>
+                    <p class="text-gray-600 mb-4">Festival yang diadakan oleh SD Muhammadiyah 3 Surabaya untuk menampilkan berbagai kegiatan dan potensi siswa.</p>
+                    <a href="#" class="text-yellow-500 font-medium hover:text-yellow-600">Learn More →</a>
+                </div>
+            </div>
+            
+            <!-- Special Programs -->
+            <div class="mt-16">
+                <h3 class="text-2xl font-bold text-center text-gray-800 mb-8">Progam Special</h3>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-white p-6 rounded-lg shadow-md flex items-start">
+                        <div class="bg-yellow-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-graduation-cap text-yellow-500 text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800 mb-2">Wisuda</h4>
+                            <p class="text-gray-600">Kegiatan kelulusan siswa, baik wisuda reguler maupun wisuda tahfidz (penghafal Al-Quran).</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-md flex items-start">
+                        <div class="bg-yellow-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-mosque text-yellow-500 text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800 mb-2">Keagamaan</h4>
+                            <p class="text-gray-600">Meliputi kegiatan selama Bulan Ramadhan dan kegiatan keagamaan lainnya yang bertujuan untuk memperdalam pemahaman siswa tentang agama Islam.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-md flex items-start">
+                        <div class="bg-yellow-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-person text-yellow-500 text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800 mb-2">Tapak Suci</h4>
+                            <p class="text-gray-600">Merupakan organisasi otonom di bawah naungan Muhammadiyah yang bergerak di bidang pencak silat.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-md flex items-start">
+                        <div class="bg-yellow-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-campground text-yellow-500 text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800 mb-2">Jambore HW(Hizbul Watan)</h4>
+                            <p class="text-gray-600">Kegiatan kepanduan yang melibatkan siswa dalam kegiatan perkemahan dan kegiatan luar ruangan lainnya.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News & Events Section -->
+    <section id="news" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Berita & Kegiatan</h2>
+                <div class="w-20 h-1 bg-yellow-500 mx-auto"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- News 1 -->
+                <div class="news-card bg-white rounded-lg overflow-hidden shadow-md border border-gray-100">
+                    <img src="image/berita1.jpg" alt="Science fair" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-500 mb-2">
+                            <span class="bg-yellow-100 text-yellow-800 text-xs font-medium px-2.5 py-0.5 rounded">Berita</span>
+                            <span class="mx-2">•</span>
+                            <span>Maret 15, 2025</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Wisuda Tahfidz</h3>
+                        <p class="text-gray-600 mb-4">Wisuda Tahfidz SD Muhammadiyah3 Surabaya, 1 siswa targetkan 10 juz.</p>
+                        <a href="#" class="text-yellow-500 font-medium hover:text-yellow-600 inline-flex items-center">Baca Selengkapnya<i class="fas fa-chevron-right ml-1 text-sm"></i></a>
+                    </div>
+                </div>
+                
+                <!-- News 2 -->
+                <div class="news-card bg-white rounded-lg overflow-hidden shadow-md border border-gray-100">
+                    <img src="image/kegiatan2.jpg" alt="Reading program" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-500 mb-2">
+                            <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded">Kegiatan</span>
+                            <span class="mx-2">•</span>
+                            <span>Juni 2, 2025</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Kegiatan Qurban</h3>
+                        <p class="text-gray-600 mb-4">Momen Penyembelihan Qurban di SD Muhammadiyah 3 Surabaya!</p>
+                        <a href="#" class="text-yellow-500 font-medium hover:text-yellow-600 inline-flex items-center">Baca Selengkapnya <i class="fas fa-chevron-right ml-1 text-sm"></i></a>
+                    </div>
+                </div>
+                
+                <!-- News 3 -->
+                <div class="news-card bg-white rounded-lg overflow-hidden shadow-md border border-gray-100">
+                    <img src="image/berita2.jpg" alt="New playground" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-500 mb-2">
+                            <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded">Berita</span>
+                            <span class="mx-2">•</span>
+                            <span>April 10, 2025</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Rapat Kerja Guru dan Karyawan</h3>
+                        <p class="text-gray-600 mb-4">Rapat kerja guru dan karyawan SD Muhammadiyah3 Surabaya,Satukan visi bersinergi menuju sekolah unggul!</p>
+                        <a href="#" class="text-yellow-500 font-medium hover:text-yellow-600 inline-flex items-center">Baca Selengkapnya <i class="fas fa-chevron-right ml-1 text-sm"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-3 px-6 rounded-full transition duration-300 inline-flex items-center">
+                    Semua Berita <i class="fas fa-newspaper ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Kata Orang Tua</h2>
+                <div class="w-20 h-1 bg-yellow-500 mx-auto"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-8 rounded-lg shadow-md relative">
+                    <div class="absolute -top-4 -left-4 bg-yellow-500 w-12 h-12 rounded-full flex items-center justify-center">
+                        <i class="fas fa-quote-left text-white text-xl"></i>
+                    </div>
+                    <p class="text-gray-600 mb-6">"Saya sangat senang melihat perkembangan anak saya di SD Muhammadiyah 3 Surabaya. Nilai-nilai agama dan budi pekerti yang ditanamkan sangat baik, dan anak saya terlihat lebih mandiri. Terima kasih SD Muhammadiyah 3 Surabaya!"</p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/women/43.jpg" alt="Parent" class="w-12 h-12 rounded-full object-cover mr-4">
+                        <div>
+                            <p class="font-bold text-gray-800">ibu Sarah</p>
+                            <p class="text-sm text-gray-600">orangtua</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-8 rounded-lg shadow-md relative">
+                    <div class="absolute -top-4 -left-4 bg-yellow-500 w-12 h-12 rounded-full flex items-center justify-center">
+                        <i class="fas fa-quote-left text-white text-xl"></i>
+                    </div>
+                    <p class="text-gray-600 mb-6">"Awalnya saya ragu memilih SD Muhammadiyah 3 Surabaya karena jarak dari rumah. Namun, setelah melihat langsung suasana sekolah dan bertemu dengan guru-gurunya, saya yakin ini adalah pilihan yang tepat.Terima kasih SD Muhammadiyah 3 Surabaya!"</p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Parent" class="w-12 h-12 rounded-full object-cover mr-4">
+                        <div>
+                            <p class="font-bold text-gray-800">Pak Michael</p>
+                            <p class="text-sm text-gray-600">orangtua</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-white p-8 rounded-lg shadow-md relative">
+                    <div class="absolute -top-4 -left-4 bg-yellow-500 w-12 h-12 rounded-full flex items-center justify-center">
+                        <i class="fas fa-quote-left text-white text-xl"></i>
+                    </div>
+                    <p class="text-gray-600 mb-6">"Sebagai orang tua, saya sangat puas dengan pendidikan di SD Muhammadiyah 3 Surabaya. Guru-gurunya sabar dan perhatian, kurikulumnya seimbang antara akademik dan nilai-nilai agama, serta fasilitas sekolah yang mendukung."</p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Parent" class="w-12 h-12 rounded-full object-cover mr-4">
+                        <div>
+                            <p class="font-bold text-gray-800">Ibu Emil</p>
+                            <p class="text-sm text-gray-600">orangtua</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Hubungi</h2>
+                <div class="w-20 h-1 bg-yellow-500 mx-auto"></div>
+            </div>
+            
+            <div class="flex flex-col md:flex-row gap-8">
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">Alamat Lengkap</h3>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="bg-yellow-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-map-marker-alt text-yellow-500 text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-1">Lokasi</h4>
+                                <p class="text-gray-600">jalan tambak segaran nomer 25 surabaya</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-yellow-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-phone-alt text-yellow-500 text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-1">Telpon</h4>
+                                <p class="text-gray-600">085233444777</p>
+                                <p class="text-gray-600 text-sm">Jam Sekolah: 7:00 AM - 14:00 PM</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-yellow-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-envelope text-yellow-500 text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-1">Email</h4>
+                                <p class="text-gray-600">sdm3surabaya@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8">
+                        <h4 class="font-bold text-gray-800 mb-4">Follow Us</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="bg-gray-100 hover:bg-yellow-500 hover:text-white w-10 h-10 rounded-full flex items-center justify-center text-gray-700 transition duration-300">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="bg-gray-100 hover:bg-yellow-500 hover:text-white w-10 h-10 rounded-full flex items-center justify-center text-gray-700 transition duration-300">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="bg-gray-100 hover:bg-yellow-500 hover:text-white w-10 h-10 rounded-full flex items-center justify-center text-gray-700 transition duration-300">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="bg-gray-100 hover:bg-yellow-500 hover:text-white w-10 h-10 rounded-full flex items-center justify-center text-gray-700 transition duration-300">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">Send Us a Message</h3>
+                    <form class="space-y-4">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                                <label for="name" class="block text-gray-700 font-medium mb-1">Name</label>
+                                <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-gray-700 font-medium mb-1">Email</label>
+                                <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent">
+                            </div>
+                        </div>
+                        <div>
+                            <label for="subject" class="block text-gray-700 font-medium mb-1">Subject</label>
+                            <input type="text" id="subject" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-gray-700 font-medium mb-1">Message</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent"></textarea>
+                        </div>
+                        <button type="submit" class="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-3 px-6 rounded-full transition duration-300">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <div class="h-96 w-full">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15831.784934312422!2d112.74251925541991!3d-7.246959800000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7f9002c1affdf%3A0x5755346807ac5b6e!2sSD%20MUHAMMADIYAH%203%20SURABAYA!5e0!3m2!1sid!2sid!4v1750562747299!5m2!1sid!2sid"  width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-school text-3xl text-yellow-500 mr-3"></i>
+                        <div>
+                            <h3 class="text-xl font-bold">SD Muhammadiyah 3 Surabaya</h3>
+                            <p class="text-sm text-gray-400">Sekolah Mujahid Qur'an</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-400">SD Muhammadiyah 3 Surabaya didirikan pada tanggal 1 Agustus 1962 di bawah naungan Yayasan Pimpinan Daerah Muhammadiyah (PDM) Kota Surabaya</p>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Beranda</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-yellow-500 transition duration-300">Home</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-yellow-500 transition duration-300">About</a></li>
+                        <li><a href="#programs" class="text-gray-400 hover:text-yellow-500 transition duration-300">Programs</a></li>
+                        <li><a href="#news" class="text-gray-400 hover:text-yellow-500 transition duration-300">Berita dan Kegiatan</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-yellow-500 transition duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Jam Sekolah</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex justify-between"><span>Senin - Kamis</span> <span>8:00 AM - 2:00 PM</span></li>
+                        <li class="flex justify-between"><span>Jum"at</span> <span>7:00 AM - 11:00 AM</span></li>
+                        <li class="flex justify-between"><span>Sabtu</span> <span>7:00 PM - 9:00 PM</span></li>
+                        <li class="flex justify-between"><span>Kantor TU</span> <span>7:00 AM - 4:00 PM</span></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Visi Misi</h4>
+                    <p class="text-gray-400 mb-4">Menjadi sekolah dasar Islam yang unggul, berkarakter, dan berwawasan global.</p>
+                    <form class="flex">
+                        <input type="email" placeholder="Your email" class="px-4 py-2 rounded-l-lg focus:outline-none text-gray-800 w-full">
+                        <button type="submit" class="bg-yellow-500 hover:bg-yellow-600 text-white px-4 py-2 rounded-r-lg transition duration-300">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm mb-4 md:mb-0">© 2025 SD Muhammadiyah 3 Surabaya All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-yellow-500 transition duration-300">Privasi</a>
+                    <a href="#" class="text-gray-400 hover:text-yellow-500 transition duration-300">Keamanan</a>
+                    <a href="#" class="text-gray-400 hover:text-yellow-500 transition duration-300">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-8 right-8 bg-yellow-500 text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg hover:bg-yellow-600 transition duration-300 hidden">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Smooth Scrolling for Navigation Links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                
+                // Close mobile menu if open
+                mobileMenu.classList.add('hidden');
+            });
+        });
+        
+        // Back to Top Button
+        const backToTopButton = document.getElementById('back-to-top');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.remove('hidden');
+            } else {
+                backToTopButton.classList.add('hidden');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        
+        // Simple form submission handler (would be replaced with actual form submission in production)
+        const contactForm = document.querySelector('form');
+        if (contactForm) {
+            contactForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                alert('Thank you for your message! We will get back to you soon.');
+                contactForm.reset();
+            });
+        }
+    </script>
+</body>
+</html>
